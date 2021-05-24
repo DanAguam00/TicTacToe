@@ -47,6 +47,7 @@ namespace TicTacToe
             this.Btn0.Size = new System.Drawing.Size(100, 100);
             this.Btn0.TabIndex = 0;
             this.Btn0.UseVisualStyleBackColor = true;
+            this.Btn0.Click += new System.EventHandler(this.Btn0_Click);
             // 
             // Btn1
             // 
@@ -55,6 +56,7 @@ namespace TicTacToe
             this.Btn1.Size = new System.Drawing.Size(100, 100);
             this.Btn1.TabIndex = 1;
             this.Btn1.UseVisualStyleBackColor = true;
+            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // Btn2
             // 
@@ -63,6 +65,7 @@ namespace TicTacToe
             this.Btn2.Size = new System.Drawing.Size(100, 100);
             this.Btn2.TabIndex = 2;
             this.Btn2.UseVisualStyleBackColor = true;
+            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // Btn3
             // 
@@ -71,6 +74,7 @@ namespace TicTacToe
             this.Btn3.Size = new System.Drawing.Size(100, 100);
             this.Btn3.TabIndex = 3;
             this.Btn3.UseVisualStyleBackColor = true;
+            this.Btn3.Click += new System.EventHandler(this.Btn3_Click);
             // 
             // Btn4
             // 
@@ -79,6 +83,7 @@ namespace TicTacToe
             this.Btn4.Size = new System.Drawing.Size(100, 100);
             this.Btn4.TabIndex = 4;
             this.Btn4.UseVisualStyleBackColor = true;
+            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
             // 
             // Btn5
             // 
@@ -87,6 +92,7 @@ namespace TicTacToe
             this.Btn5.Size = new System.Drawing.Size(100, 100);
             this.Btn5.TabIndex = 5;
             this.Btn5.UseVisualStyleBackColor = true;
+            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
             // 
             // Btn6
             // 
@@ -95,6 +101,7 @@ namespace TicTacToe
             this.Btn6.Size = new System.Drawing.Size(100, 100);
             this.Btn6.TabIndex = 6;
             this.Btn6.UseVisualStyleBackColor = true;
+            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
             // 
             // Btn7
             // 
@@ -103,6 +110,7 @@ namespace TicTacToe
             this.Btn7.Size = new System.Drawing.Size(100, 100);
             this.Btn7.TabIndex = 7;
             this.Btn7.UseVisualStyleBackColor = true;
+            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
             // 
             // Btn8
             // 
@@ -111,6 +119,7 @@ namespace TicTacToe
             this.Btn8.Size = new System.Drawing.Size(100, 100);
             this.Btn8.TabIndex = 8;
             this.Btn8.UseVisualStyleBackColor = true;
+            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
             // 
             // Form1
             // 
