@@ -107,42 +107,98 @@ namespace TicTacToe
             if ((Btn0.Text == "X") && (Btn0.Text == Btn1.Text) && (Btn1.Text == Btn2.Text) && (Btn0.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn0.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn3.Text == "X") && (Btn3.Text == Btn4.Text) && (Btn4.Text == Btn5.Text) && (Btn3.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn3.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn6.Text == "X") && (Btn6.Text == Btn7.Text) && (Btn7.Text == Btn8.Text) && (Btn6.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn6.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn0.Text == "X") && (Btn0.Text == Btn3.Text) && (Btn3.Text == Btn6.Text) && (Btn0.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn0.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn1.Text == "X") && (Btn1.Text == Btn4.Text) && (Btn4.Text == Btn7.Text) && (Btn1.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn1.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn2.Text == "X") && (Btn2.Text == Btn5.Text) && (Btn5.Text == Btn8.Text) && (Btn2.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn2.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else if ((Btn0.Text == "X") && (Btn0.Text == Btn4.Text) && (Btn4.Text == Btn8.Text) && (Btn0.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn0.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
-            else if ((Btn2.Text == "X") && (Btn2.Text == Btn4.Text) && (Btn4.Text == Btn6.Text) && (Btn2.Enabled == false))
+            else if ((Btn2.Text == Btn4.Text) && (Btn4.Text == Btn6.Text) && (Btn2.Enabled == false))
             {
                 win = true;
-                player = true;
+                if (Btn2.Text == "X")
+                {
+                    player = true;
+                }
+                else
+                {
+                    player = false;
+                }
             }
             else
             {
