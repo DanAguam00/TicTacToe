@@ -146,11 +146,11 @@ namespace TicTacToe
         }
         private void computerGuess()
         {
-            Random generator = new();
-            byte number = (byte)generator.Next(0, 8);
-
             while (true)
             {
+                Random generator = new();
+                byte number = (byte)generator.Next(0, 8);
+
                 if (number == 0)
                 {
                     if (Btn0.Enabled == true)
@@ -159,12 +159,11 @@ namespace TicTacToe
                         Btn0.BackColor = Color.LightCyan;
                         Btn0.Enabled = false;
                         Winner();
-
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -176,11 +175,11 @@ namespace TicTacToe
                         Btn1.BackColor = Color.LightCyan;
                         Btn1.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -192,11 +191,11 @@ namespace TicTacToe
                         Btn2.BackColor = Color.LightCyan;
                         Btn2.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -208,11 +207,11 @@ namespace TicTacToe
                         Btn0.BackColor = Color.LightCyan;
                         Btn0.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -224,11 +223,11 @@ namespace TicTacToe
                         Btn4.BackColor = Color.LightCyan;
                         Btn4.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -240,11 +239,11 @@ namespace TicTacToe
                         Btn5.BackColor = Color.LightCyan;
                         Btn5.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -256,11 +255,11 @@ namespace TicTacToe
                         Btn6.BackColor = Color.LightCyan;
                         Btn6.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -272,11 +271,11 @@ namespace TicTacToe
                         Btn7.BackColor = Color.LightCyan;
                         Btn7.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
 
@@ -288,11 +287,11 @@ namespace TicTacToe
                         Btn8.BackColor = Color.LightCyan;
                         Btn8.Enabled = false;
                         Winner();
+                        break;
                     }
                     else
                     {
-                        byte number1 = (byte)generator.Next(0, 8);
-                        number = number1;
+                        continue;
                     }
                 }
             }
