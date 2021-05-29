@@ -29,86 +29,87 @@ namespace TicTacToe
         {
             bool win = false;
             bool player = false;
-            if ((Btn0.Text == "X") && (Btn0.Text == Btn1.Text) && (Btn1.Text == Btn2.Text) && (Btn0.Enabled == false))
+            byte turn = 0;
+            if ((Btn0.Text == Btn1.Text) && (Btn1.Text == Btn2.Text) && (Btn0.Enabled == false))
             {
                 win = true;
                 if (Btn0.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn0.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn3.Text == "X") && (Btn3.Text == Btn4.Text) && (Btn4.Text == Btn5.Text) && (Btn3.Enabled == false))
+            else if ((Btn3.Text == Btn4.Text) && (Btn4.Text == Btn5.Text) && (Btn3.Enabled == false))
             {
                 win = true;
                 if (Btn3.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn3.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn6.Text == "X") && (Btn6.Text == Btn7.Text) && (Btn7.Text == Btn8.Text) && (Btn6.Enabled == false))
+            else if ((Btn6.Text == Btn7.Text) && (Btn7.Text == Btn8.Text) && (Btn6.Enabled == false))
             {
                 win = true;
                 if (Btn6.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn6.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn0.Text == "X") && (Btn0.Text == Btn3.Text) && (Btn3.Text == Btn6.Text) && (Btn0.Enabled == false))
+            else if ((Btn0.Text == Btn3.Text) && (Btn3.Text == Btn6.Text) && (Btn0.Enabled == false))
             {
                 win = true;
                 if (Btn0.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn0.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn1.Text == "X") && (Btn1.Text == Btn4.Text) && (Btn4.Text == Btn7.Text) && (Btn1.Enabled == false))
+            else if ((Btn1.Text == Btn4.Text) && (Btn4.Text == Btn7.Text) && (Btn1.Enabled == false))
             {
                 win = true;
                 if (Btn1.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn1.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn2.Text == "X") && (Btn2.Text == Btn5.Text) && (Btn5.Text == Btn8.Text) && (Btn2.Enabled == false))
+            else if ((Btn2.Text == Btn5.Text) && (Btn5.Text == Btn8.Text) && (Btn2.Enabled == false))
             {
                 win = true;
                 if (Btn2.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn2.Text == "O")
                 {
                     player = false;
                 }
             }
-            else if ((Btn0.Text == "X") && (Btn0.Text == Btn4.Text) && (Btn4.Text == Btn8.Text) && (Btn0.Enabled == false))
+            else if ((Btn0.Text == Btn4.Text) && (Btn4.Text == Btn8.Text) && (Btn0.Enabled == false))
             {
                 win = true;
                 if (Btn0.Text == "X")
                 {
                     player = true;
                 }
-                else
+                else if (Btn0.Text == "O")
                 {
                     player = false;
                 }
@@ -120,7 +121,7 @@ namespace TicTacToe
                 {
                     player = true;
                 }
-                else
+                else if (Btn2.Text == "O")
                 {
                     player = false;
                 }
@@ -128,19 +129,28 @@ namespace TicTacToe
             else
             {
                 win = false;
+                turn++;                 
             }
 
             //Message
             if (win == true)
             {
-                if (player == true)
+                disableAllButtons();
+                if(turn != 9)
                 {
-                    MessageBox.Show("X is the winner", "Winner");
+                    if (player == true)
+                    {
+                        MessageBox.Show("X is the winner", "Winner");
+                    }
+                    else
+                    {
+                        MessageBox.Show("O is the winner ", "Winner");
+
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("O is the winner ", "Winner");
-
+                    MessageBox.Show("Its a draw", "Draw");
                 }
             }
         }
@@ -296,8 +306,15 @@ namespace TicTacToe
                 }
             }
         }
-            
-
+        private void disableAllButtons()
+        {
+            foreach (Control remainingBtn in Controls)
+            {
+                Button disabling = (Button)remainingBtn;
+                disabling.Enabled = false;
+            }
+        }
+        
         
     }
 }
