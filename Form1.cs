@@ -12,6 +12,8 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
+        byte turns = 0;
+        
         public Form1()
         {
             InitializeComponent();
@@ -193,17 +195,91 @@ namespace TicTacToe
         }
         private void disableAllButtons()
         {
-            foreach (Control remainingBtn in Controls)
+            if(Btn0.Enabled == true)
             {
-                Button disabling = (Button)remainingBtn;
-                disabling.Enabled = false;
+                Btn0.Enabled = false;
+            }
+            else
+            {
+                Btn0.Enabled = true;
+            }
+
+            if (Btn1.Enabled == true)
+            {
+                Btn1.Enabled = false;
+            }
+            else
+            {
+                Btn1.Enabled = true;
+            }
+
+            if (Btn2.Enabled == true)
+            {
+                Btn2.Enabled = false;
+            }
+            else
+            {
+                Btn2.Enabled = true;
+            }
+
+            if (Btn3.Enabled == true)
+            {
+                Btn3.Enabled = false;
+            }
+            else
+            {
+                Btn3.Enabled = true;
+            }
+
+            if (Btn4.Enabled == true)
+            {
+                Btn4.Enabled = false;
+            }
+            else
+            {
+                Btn4.Enabled = true;
+            }
+
+            if (Btn5.Enabled == true)
+            {
+                Btn5.Enabled = false;
+            }
+            else
+            {
+                Btn5.Enabled = true;
+            }
+
+            if (Btn6.Enabled == true)
+            {
+                Btn6.Enabled = false;
+            }
+            else
+            {
+                Btn6.Enabled = true;
+            }
+
+            if (Btn7.Enabled == true)
+            {
+                Btn7.Enabled = false;
+            }
+            else
+            {
+                Btn7.Enabled = true;
+            }
+
+            if (Btn8.Enabled == true)
+            {
+                Btn8.Enabled = false;
+            }
+            else
+            {
+                Btn8.Enabled = true;
             }
         }
         private void Winner()
         {
             bool win = false;
             bool player = false;
-            byte turn = 0;
             if ((Btn0.Text == Btn1.Text) && (Btn1.Text == Btn2.Text) && (Btn0.Enabled == false))
             {
                 win = true;
@@ -306,29 +382,26 @@ namespace TicTacToe
 
             }
 
-            ++turn;
+            turns++;
 
             if (win == true)
             {
                 disableAllButtons();
-                if (turn != 9)
+                if (player == true)
                 {
-                    if (player == true)
-                    {
-                        MessageBox.Show("X is the winner", "Winner");
-                    }
-                    else
-                    {
-                        MessageBox.Show("O is the winner ", "Winner");
-
-                    }
+                    MessageBox.Show("X is the winner", "Winner");
                 }
                 else
+                {
+                    MessageBox.Show("O is the winner ", "Winner");
+
+                }
+
+                if (turns == 9)
                 {
                     MessageBox.Show("Its a draw", "Draw");
                 }
             }
         }
-
     }
 }
