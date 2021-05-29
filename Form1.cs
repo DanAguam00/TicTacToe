@@ -86,9 +86,9 @@ namespace TicTacToe
                 {
                     if (Btn3.Enabled == true)
                     {
-                        Btn0.Text = "O";
-                        Btn0.BackColor = Color.LightCyan;
-                        Btn0.Enabled = false;
+                        Btn3.Text = "O";
+                        Btn3.BackColor = Color.LightCyan;
+                        Btn3.Enabled = false;
                         drawCountdown++;
                         Winner();
                         break;
