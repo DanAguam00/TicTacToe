@@ -34,8 +34,7 @@ namespace TicTacToe
                 Random generator = new();
                 byte number = (byte)generator.Next(0, 8);
                 byte drawCountdown = 0;
-                               
-
+                            
                 if (number == 0)
                 {
                     if (Btn0.Enabled == true)
@@ -343,7 +342,6 @@ namespace TicTacToe
             else
             {
                 win = false;
-
             }
 
             turns++;
@@ -358,7 +356,6 @@ namespace TicTacToe
                 else
                 {
                     MessageBox.Show("O is the winner ", "Winner");
-
                 }
 
                 if (turns == 9)
